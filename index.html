@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="options">
+            <ul>
+                <li id="opt1">Brightness</li>
+                <li id="opt2">Blur</li>
+                <li id="opt3">GreyScale</li>
+                <li id="opt4">Hue Rotate</li>
+                <li id="opt5">Saturate</li>
+                <li id="export">Export</li>
+            </ul>
+        </div>
+        <div id="workArea">
+            <div id="top">
+                <input type="file" name="image" id="input" accept="images/*" hidden>
+                <div id="image">
+                    <img src="placeholder-2.jpg" alt="">
+                    <button id="upload">Selact an Image</button>
+                </div>
+                                
+            </div>
+            <div id="changes" hidden>
+                <div id="control">
+                    <div id="controlInfo">
+                        <div id="tag">Brightness</div>
+                        <div id="val">20</div>
+                    </div>
+                    <input type="range" max="200" name="" id="range">
+                </div>
+                <div id="reset">Reset</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scriplt.js"></script>
+</body>
+</html>
